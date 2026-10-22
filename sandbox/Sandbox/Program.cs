@@ -11,8 +11,8 @@ class Program
         circle myCircle = new circle();
         myCircle._radius = 10;
         double area = myCircle.GetArea();
-        Console.WriteLine(area);```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
-        // int x = 10;
+        Console.WriteLine(area);
+                // int x = 10;
         // int y = 30;
         // int z = 40
 
