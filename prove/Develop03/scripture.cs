@@ -1,16 +1,28 @@
+using System;
 using System.ComponentModel;
 
-class scripture
+class Scripture
 {
     private List<Word> _words;
 
+    Random _random = new Random();
 
-    public scripture (string bookName, int chapter, int verse, string text)
+    public Scripture (string bookName, int chapter, int verse, string text)
     {
         _words = convertToWordList(text);
+
+        
     }
 
-    public scripture (string bookName, int chapter, int startVerse, int endVerse, string text)
+    public void hideWord()
+    {
+        int RandomWord = _random.Next(0, _words.Count);
+        _words[RandomWord].Hide();
+    }
+    
+
+
+    public Scripture (string bookName, int chapter, int startVerse, int endVerse, string text)
     {
         
     }
@@ -22,6 +34,7 @@ class scripture
             Word.Display();
         }
     }
+    
 
     private List<Word> convertToWordList(string text)
     {

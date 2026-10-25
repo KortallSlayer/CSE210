@@ -1,7 +1,9 @@
+using System;
 class Word
 {
     private string _word;
     private bool _hidden;
+
 
     public Word(string word)
     {
@@ -40,5 +42,9 @@ class Word
     public void Display()
     {
         Console.Write($"{GetWordString()} ");
+    }
+    public void HideWord()
+    {
+        
     }
 }
